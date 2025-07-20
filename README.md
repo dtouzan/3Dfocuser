@@ -33,7 +33,7 @@ sudo make install
 
 ## Interface (With CCDCIEL)
 ### Connect
-<img src="Connect.png">
+<img src="connect.png">
 
 ### Used
 <img src="ticks.png">
