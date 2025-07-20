@@ -1,15 +1,15 @@
 # 3Dfocuser
 3D focuser for indilib
 
-# Draw
+## Draw
 
-# Download
+## Download
 ```sh
 cd
 git clone https://github.com/dtouzan/3Dfocuser
 ```
 
-# install (For Raspberry Pi Zéro 2 W)
+## install (For Raspberry Pi Zéro 2 W)
 ```sh
 sudo cp ~/3Dfocuser/Build/indi_EAFpy_focuser /usr/bin/indi_EAFpy_focuser
 sudo cp ~/3Dfocuser/Build/indi_EAFpy_focuser.xml /usr/share/indi/indi_EAFpy_focuser.xml
@@ -19,7 +19,7 @@ mkdir -p ~/EAFpy
 cp ~/3Dfocuser/Sources/*.py ~/EAFpy
 ```
 
-# Rebuild 
+## Rebuild 
 
 ```sh
 cd
@@ -31,4 +31,4 @@ make
 sudo make install
 ```
 
-# Interface (With CCDCIEL)
+## Interface (With CCDCIEL)
