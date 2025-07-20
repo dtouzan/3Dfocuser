@@ -32,3 +32,14 @@ sudo make install
 ```
 
 ## Interface (With CCDCIEL)
+### Connect
+<img src="Connect.png">
+
+### Used
+<img src="ticks.png">
+
+### Driver info for speed
+<img src="speed.png">
+
+### Driver info for delay for step motor
+<img src="delay.png">
