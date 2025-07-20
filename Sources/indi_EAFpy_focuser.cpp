@@ -224,9 +224,9 @@ IPState EAFpyFocuser::MoveFocuser(FocusDirection dir, int speed, uint16_t durati
         }
     
     // For debug
-    std::string cmd = "python3 ~/EAFpy/MoveInfo.py " + std::to_string(TicksValue) + " " +  std::to_string(RealDuration);
+    //std::string cmd = "python3 ~/EAFpy/MoveInfo.py " + std::to_string(TicksValue) + " " +  std::to_string(RealDuration);
     // For Run 
-    //std::string cmd = "python3 ~/EAFpy/EAFpyMotor.py " + std::to_string(TicksValue) + " " + std::to_string(RealDuration);
+    std::string cmd = "python3 ~/EAFpy/EAFpyMotor.py " + std::to_string(TicksValue) + " " + std::to_string(RealDuration);
     // Running command
     /* ====================== /!\ /!\ /!\ /!\ /!\=========================*/
     system(cmd.c_str());

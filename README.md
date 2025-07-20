@@ -31,6 +31,12 @@ make
 sudo make install
 ```
 
+## Start 
+```sh
+cd
+indiserver indi_EAFpy_focuser indi_simulator_ccd
+```
+
 ## Interface (With CCDCIEL)
 ### Connect
 <img src="connect.png">
