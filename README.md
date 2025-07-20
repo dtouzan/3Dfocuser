@@ -2,6 +2,7 @@
 3D focuser for indilib
 
 ## Draw
+<img src="Draw.png">
 
 ## Download
 ```sh
