@@ -9,7 +9,7 @@ cd
 git clone https://github.com/dtouzan/3Dfocuser
 ```
 
-## install (For Raspberry Pi Zéro 2 W)
+## Install (For Raspberry Pi Zéro 2 W)
 ```sh
 sudo cp ~/3Dfocuser/Build/indi_EAFpy_focuser /usr/bin/indi_EAFpy_focuser
 sudo cp ~/3Dfocuser/Build/indi_EAFpy_focuser.xml /usr/share/indi/indi_EAFpy_focuser.xml
