@@ -3,25 +3,32 @@
 
 # Draw
 
-# install
+# Download
 ```sh
-sudo cp indi_EAFpy_focuser /usr/bin/indi_EAFpy_focuser
-sudo cp indi_EAFpy_focuser.xml /usr/share/indi/indi_EAFpy_focuser.xml
-
-mkdir -p ~/EAFpy
-cp MoveInfo.py EAFpyGPIO_OUT.py EAFpyMotor.py ~/EAFpy
+cd
+git clone https://github.com/dtouzan/3Dfocuser
 ```
 
+# install (For Raspberry Pi Zéro 2 W)
+```sh
+sudo cp ~/3Dfocuser/Build/indi_EAFpy_focuser /usr/bin/indi_EAFpy_focuser
+sudo cp ~/3Dfocuser/Build/indi_EAFpy_focuser.xml /usr/share/indi/indi_EAFpy_focuser.xml
+
+cd
+mkdir -p ~/EAFpy
+cp ~/3Dfocuser/Sources/*.py ~/EAFpy
+```
 
 # Rebuild 
 
 ```sh
-mkdir -p ~/indi-EAFpy-Focuser
-cp CMakeLists.txt config.h.cmake indi_EAFpy_focuser.cpp indi_EAFpy_focuser.h indi_EAFpy_focuser.xml.cmake
+cd
+git clone https://github.com/dtouzan/3Dfocuser
 mkdir build
 cd build
-cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Debug ~/indi-EAFpy-Focuser
+cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Debug ~/3Dfocuser/Sources
 make
 sudo make install
 ```
 
+# Interface (With CCDCIEL)
