@@ -37,6 +37,9 @@ cd
 indiserver indi_EAFpy_focuser indi_simulator_ccd
 ```
 
+## Connect motor
+<img src="connect_motor.png">
+
 ## Interface (With CCDCIEL)
 ### Connect
 <img src="connect.png">
