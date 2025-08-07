@@ -55,3 +55,45 @@ indiserver indi_EAFpy_focuser indi_simulator_ccd
 
 ### Driver info for delay for step motor
 <img src="delay.png">
+
+## Python usage
+```python
+from ciboulette.indiclient import indiEAFpy
+
+# Create EAFpy
+focus = indiEAFpy.EAFpy('IP address or host name',7624)
+
+# Go to 30 step
+focus.ticks = 30
+
+# Initialized number of steps
+focus.ticks
+return 30
+
+# Initialized moving outward
+focus.outward
+
+# Initialized moving inward
+focus.inward
+
+# Focus direction (inward, outward)
+focus.direction
+return (On, Off)
+
+# Initialized focus delay
+focus.delay = 5
+
+# Focus delay
+focus.delay
+return 5.0
+
+# Initialized speed 1
+focus.speed1
+
+# Initialized speed 2
+focus.speed2
+
+# Speed (speed 1, speed 2)
+focus.speed
+return ('On', 'Off')
+```
