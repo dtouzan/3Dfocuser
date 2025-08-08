@@ -70,7 +70,7 @@ bool EAFpyFocuser::initProperties()
     FocusSpeedSP.fill(getDeviceName(), "FOCUS_SPEED_SP", "Speed", MAIN_CONTROL_TAB, IP_RW, ISR_1OFMANY, 60,IPS_OK);
    
     // Delay 
-    DelayNP[0].fill("DELAY_VALUE", "Value (uS)", "%.f", 2, 50, 1, 10);
+    DelayNP[0].fill("DELAY_VALUE", "Value (ms)", "%.f", 2, 50, 1, 10);
     DelayNP.fill(getDeviceName(), "DELAY", "Delay", OPTIONS_TAB, IP_RW, 60, IPS_IDLE);
 
     addAuxControls();
