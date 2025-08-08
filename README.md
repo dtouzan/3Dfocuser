@@ -9,27 +9,29 @@
 cd
 git clone https://github.com/dtouzan/3Dfocuser
 
-cd
-mkdir -p ~/EAFpy
-cp ~/3Dfocuser/Sources/*.py ~/EAFpy
-
 pip install RPI.GPIO
 ```
 
 ## Install (For Raspberry Pi Zéro 2 W)
 ```sh
-sudo cp ~/3Dfocuser/Build/indi_EAFpy_focuser /usr/bin/indi_EAFpy_focuser
-sudo cp ~/3Dfocuser/Build/indi_EAFpy_focuser.xml /usr/share/indi/indi_EAFpy_focuser.xml
+sudo cp ~/3Dfocuser/build/indi_EAFpy_focuser /usr/bin/indi_EAFpy_focuser
+sudo cp ~/3Dfocuser/build/indi_EAFpy_focuser.xml /usr/share/indi/indi_EAFpy_focuser.xml
 chmod +x /usr/bin/indi_EAFpy_focuser
+
+cd
+mkdir -p ~/EAFpy
+cp -r ~/3Dfocuser/indi-3rdparty/EAFpylib/dist/EAFpyGPIO_OUT ~/EAFpy
+cp -r ~/3Dfocuser/indi-3rdparty/EAFpylib/dist/EAFpyMotor ~/EAFpy
+chmod -R +x ~/EAFpy
 ```
 
-## Rebuild 
+## Rebuild (after installing indilib development)
 
 ```sh
 cd
 mkdir build
 cd build
-cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Debug ~/3Dfocuser/Sources
+cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Debug ~/3Dfocuser/indi-3rdparty/indi_EAFpy_focuser
 make
 sudo make install
 ```
