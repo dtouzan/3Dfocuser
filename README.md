@@ -59,6 +59,7 @@ indiserver indi_EAFpy_focuser indi_simulator_ccd
 <img src="delay.png">
 
 ## Python usage
+[Notebook example](https://github.com/dtouzan/ciboulette/blob/main/notebook/example-focuser.ipynb)
 ```python
 from ciboulette.indiclient import indiEAFpy
 
