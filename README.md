@@ -16,7 +16,7 @@ pip install RPI.GPIO
 ```sh
 sudo cp ~/3Dfocuser/build/indi_EAFpy_focuser /usr/bin/indi_EAFpy_focuser
 sudo cp ~/3Dfocuser/build/indi_EAFpy_focuser.xml /usr/share/indi/indi_EAFpy_focuser.xml
-chmod +x /usr/bin/indi_EAFpy_focuser
+sudo chmod +x /usr/bin/indi_EAFpy_focuser
 
 cd
 mkdir -p ~/EAFpy
